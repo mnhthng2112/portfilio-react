@@ -5,8 +5,8 @@ import  * as image from "../../../assets/images/assets";
 const Header = () => {
     return (
         <React.Fragment>
-            <nav className="fixed w-full z-50">
-                <div className="flex items-center justify-between container m-auto">
+            <nav>
+                <div className="container flex items-center justify-between m-auto">
                     <img src={image.LogoPortfolio} className="w-[250px] h-[100px]" alt="" />
                     <div className="flex">
                         <div className="nav-item">

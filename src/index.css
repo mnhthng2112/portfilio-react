@@ -6,25 +6,24 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.screenSwiper.swiper {
+  height: calc(100vh - 200px);
+}
 @layer components {
   body {
     @apply
     bg-greyMedium
   }
-  section {
-    @apply
-    py-14
-  }
   .nav-item {
     @apply
-    font-bold uppercase 
+    font-bold uppercase
   }
   .nav-link {
     @apply 
     p-4 m-4
-    text-sm
+    text-base
     block
-    duration-400
+    duration-300
     hover:text-white hover:bg-black hover:scale-[1.2]
   }
 }
