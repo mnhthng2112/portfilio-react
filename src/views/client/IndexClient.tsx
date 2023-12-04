@@ -2,6 +2,7 @@ import React from "react";
 import Banner from '../../components/elements/swiperSliders/Banner';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Mousewheel } from 'swiper';
+import Favorite from "../../components/elements/swiperSliders/Favorite";
 
 const IndexClient = () => {
     return (
@@ -22,7 +23,7 @@ const IndexClient = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="grid place-items-center h-full">
-                        Slide 2
+                        <Favorite />
                     </div>
                 </SwiperSlide>
             </Swiper>

@@ -8,7 +8,29 @@ body {
 
 .screenSwiper.swiper {
   height: calc(100dvh - 100px);
-  padding-bottom: 100px;
+}
+
+.vertical-dashed {
+  position: absolute;
+  width: 1px;
+  height: calc(100vh - 200px);
+  inset: 50% 50% auto auto;
+  transform: translate(50%, -50%);
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%2300000080' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.horizontal-dashed {
+  position: absolute;
+  height: 1px;
+  width: calc(100dvw - 200px);
+  inset: auto 50% auto auto ;
+  transform: translateX(50%);
+  background-image: url("data:image/svg+xml,%3csvg width=%27100%25%27 height=%27100%25%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3crect width=%27100%25%27 height=%27100%25%27 fill=%27none%27 stroke=%27%2300000080%27 stroke-width=%271%27 stroke-dasharray=%275%2c 15%27 stroke-dashoffset=%270%27 stroke-linecap=%27square%27/%3e%3c/svg%3e");
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
 }
 @layer components {
   body {
@@ -21,7 +43,7 @@ body {
   }
   .nav-link {
     @apply 
-    p-4 m-4
+    p-4
     text-sm
     block
     duration-300

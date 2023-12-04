@@ -1,5 +1,3 @@
-import React from "react";
-import * as image from "../../../assets/images/assets";
 import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -30,27 +28,48 @@ const Banner = () => {
   }, [typedName]);
 
   return (
-    <React.Fragment>
-      <div className="container grid grid-cols-2 mx-auto">
-        <div className="flex flex-col justify-center space-y-5">
-          <div className="uppercase text-greyBold font-bold mb-2">
-            hello, my name is
+    <section>
+      <div className='absolute left-0 bottom-0'>
+        <img src="./images/paintingFlower.png" className='w-[275px]' alt="" />
+      </div>
+      <div className="container relative grid grid-cols-2 mx-auto mb-[100px]">
+        <div className="flex justify-around">
+          <div className="vertical-text cursor-default text-center font-bold text-5xl rotate-180 uppercase text-white flex justify-between drop-shadow-md">
+            <span>w</span>
+            <span>e</span>
+            <span>l</span>
+            <span>c</span>
+            <span>o</span>
+            <span>m</span>
+            <span>e</span>
           </div>
-          <div className="h-12">
-            <span className="text-5xl font-bold typed-name" ref={typedName}></span>
-          </div>
-          <div>
-            If you are reading this, I wish you all the best and happiness and...
-            <br/>
-            Always have a nice day!!!
-          </div>
-          <div className="flex items-center space-x-4">
-            <Link to={''}><FontAwesomeIcon icon={faFacebookF} size="lg" /></Link>
-            <Link to={'https://github.com/mnhthng2112'}><FontAwesomeIcon icon={faGithub} size="lg" /></Link>
+          <div className="flex flex-col justify-center space-y-5 drop-shadow-sm">
+            <div className="uppercase text-greyBold font-bold">
+              hello, my name is
+            </div>
+            <div className="h-12">
+              <span className="text-5xl font-bold typed-name" ref={typedName}></span>
+            </div>
+            <div>
+              I just created this website for myself.
+              If you see this I hope you like it.
+              <br/>
+              I wish you all the best, happiness and...
+              <br/>
+              Have a nice day!!!
+            </div>
+            <div className="flex items-center space-x-4">
+              <Link to={'https://www.facebook.com/profile.php?id=100036095643578'} target="_blank"><FontAwesomeIcon icon={faFacebookF} size="lg" /></Link>
+              <Link to={'https://github.com/mnhthng2112'} target="_blank"><FontAwesomeIcon icon={faGithub} size="lg" /></Link>
+            </div>
           </div>
         </div>
-
-        <div className="bg-gradient-to-br from-greyLight to-greySemiBold p-5 w-3/4 my-auto ml-auto">
+        <div className="vertical-dashed !left-[-20px]"></div>
+        <div className="vertical-dashed"></div>
+        <div className="vertical-dashed !right-[-20px]"></div>
+        <div className="horizontal-dashed !top-[-20px]"></div>
+        <div className="horizontal-dashed !bottom-[-20px]"></div>
+        <div className="bg-gradient-to-br from-greyLight to-greySemiBold p-5 w-3/4 my-auto mx-auto">
           <Swiper
             autoplay={{
               delay: 4000,
@@ -61,18 +80,18 @@ const Banner = () => {
             className="bannerSwiper"
           >
             <SwiperSlide>
-              <img src={image.BannerSlide} alt="" />
+              <img src={"./images/banner-1.jpg"} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={image.BannerSlide} alt="" />
+              <img src={"./images/banner-1.jpg"} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={image.BannerSlide} alt="" />
+              <img src={"./images/banner-1.jpg"} alt="" />
             </SwiperSlide>
           </Swiper>
         </div>
       </div>
-    </React.Fragment>
+    </section>
   );
 };
 
