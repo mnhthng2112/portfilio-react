@@ -37,9 +37,7 @@ const Banner = () => {
             hello, my name is
           </div>
           <div className="h-12">
-            <span className="text-5xl font-bold typed-name" ref={typedName}>
-              Do Manh Thang
-            </span>
+            <span className="text-5xl font-bold typed-name" ref={typedName}></span>
           </div>
           <div>
             If you are reading this, I wish you all the best and happiness and...

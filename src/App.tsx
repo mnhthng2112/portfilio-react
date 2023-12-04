@@ -1,6 +1,6 @@
 import React from 'react';
-import ClientLayout from './components/layouts/clientLayout';
-import AdminLayout from './components/layouts/adminLayout';
+import ClientLayout from './components/layouts/ClientLayout1';
+import AdminLayout from './components/layouts/AdminLayout1';
 import IndexClient from './views/client/IndexClient';
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
 
