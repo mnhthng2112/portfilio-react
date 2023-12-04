@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from '../../components/elements/swiperSliders/Banner1';
+import Banner from '../../components/elements/swiperSliders/Banner';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Mousewheel } from 'swiper';
 

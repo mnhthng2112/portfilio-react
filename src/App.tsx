@@ -1,8 +1,8 @@
-import React from 'react';
-import ClientLayout from './components/layouts/ClientLayout1';
-import AdminLayout from './components/layouts/AdminLayout1';
+import AdminLayout from './components/layouts/AdminLayout';
+import ClientLayout from './components/layouts/ClientLayout';
 import IndexClient from './views/client/IndexClient';
 import { RouterProvider,createBrowserRouter } from 'react-router-dom';
+
 
 export const routers = [
   {
