@@ -1,6 +1,5 @@
 import React from "react";
 import * as image from "../../../assets/images/assets";
-import "./banner.css";
 import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -22,6 +21,7 @@ const Banner = () => {
         backSpeed: 120,
         backDelay: 1500,
         loop: true,
+        showCursor: false
       });
       return () => {
         typed.destroy();
@@ -42,8 +42,9 @@ const Banner = () => {
             </span>
           </div>
           <div>
-            If you are reading this, I wish you all the best and happiness and
-            always have a nice day.
+            If you are reading this, I wish you all the best and happiness and...
+            <br/>
+            Always have a nice day!!!
           </div>
           <div className="flex items-center space-x-4">
             <Link to={''}><FontAwesomeIcon icon={faFacebookF} size="lg" /></Link>

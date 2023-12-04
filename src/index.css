@@ -7,7 +7,8 @@ body {
 }
 
 .screenSwiper.swiper {
-  height: calc(100vh - 200px);
+  height: calc(100dvh - 100px);
+  padding-bottom: 100px;
 }
 @layer components {
   body {
@@ -21,9 +22,9 @@ body {
   .nav-link {
     @apply 
     p-4 m-4
-    text-base
+    text-sm
     block
     duration-300
-    hover:text-white hover:bg-black hover:scale-[1.2]
+    hover:text-white hover:bg-black hover:scale-[1.1]
   }
 }

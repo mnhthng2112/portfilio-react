@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import Banner from '../../components/elements/banner/banner';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from 'swiper';
+import { Pagination, Mousewheel } from 'swiper';
 
 const IndexClient = () => {
     return (
@@ -11,7 +11,8 @@ const IndexClient = () => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
+                mousewheel={true}
+                modules={[Pagination, Mousewheel]}
                 className="screenSwiper"
             >
                 <SwiperSlide>
