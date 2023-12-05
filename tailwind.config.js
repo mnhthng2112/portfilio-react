@@ -3,6 +3,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       animation: {
       },
@@ -16,6 +19,9 @@ module.exports = {
         '400': '400ms',
       },
     },
+    fontFamily: {
+      'Crimson': ['"Crimson Text"', '"serif"'],
+    }
   },
   plugins: [],
 }

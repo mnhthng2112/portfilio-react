@@ -17,9 +17,10 @@ const IndexClient = () => {
                 className="screenSwiper"
             >
                 <SwiperSlide>
-                    <div className="grid place-items-center h-full">
-                        <Banner />
-                    </div>
+                    <Banner />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Favorite />
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="grid place-items-center h-full">
