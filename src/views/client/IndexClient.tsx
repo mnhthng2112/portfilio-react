@@ -3,10 +3,13 @@ import Banner from '../../components/elements/swiperSliders/Banner';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Mousewheel } from 'swiper';
 import Favorite from "../../components/elements/swiperSliders/Favorite";
+import About from "../../components/elements/swiperSliders/About";
+import Header from "../../components/elements/header/Header";
 
 const IndexClient = () => {
     return (
         <React.Fragment>
+            <Header />
             <Swiper
                 direction={'vertical'}
                 pagination={{
@@ -20,12 +23,10 @@ const IndexClient = () => {
                     <Banner />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Favorite />
+                    <About />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="grid place-items-center h-full">
-                        <Favorite />
-                    </div>
+                    <Favorite />
                 </SwiperSlide>
             </Swiper>
         </React.Fragment>

@@ -28,10 +28,10 @@ const Banner = () => {
   }, [typedName]);
 
   return (
-    <section className="grid place-items-center h-full">
-      <div className='absolute left-0 bottom-0'>
+    <section id="banner" className="grid place-items-center h-full">
+      {/* <div className='absolute left-0 bottom-0'>
         <img src="./images/paintingFlower.png" className='w-[275px]' alt="" />
-      </div>
+      </div> */}
       <div className="container relative grid grid-cols-2 mb-[100px]">
         <div className="flex justify-around">
           <div className="vertical-text font-Crimson cursor-default text-center font-bold text-6xl rotate-180 uppercase text-greySemiBold flex justify-between ">

@@ -23,9 +23,9 @@ const Header = () => {
     ]
     return (
         <nav>
-            <div className='absolute right-0 top-0'>
+            {/* <div className='absolute right-0 top-0'>
                 <img src="./images/birdFlowerEuclidean.png" className='h-[100px]' alt="" />
-            </div>
+            </div> */}
             <div className="container flex items-center justify-between m-auto">
                 <img src={"./images/logoPortfolio.png"} className="w-[250px] h-[100px]" alt="" />
                 <div className="flex space-x-4">
