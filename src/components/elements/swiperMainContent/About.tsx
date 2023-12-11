@@ -47,7 +47,7 @@ const About = () => {
                             <input id="range" type="range" min="0" max="100" value="40" step="1" />
                         </div>
                         <div className="max-w-[500px] w-full">
-                            <div className='font-medium capitalize'>Scrum Agile</div>
+                            <div className='font-medium capitalize'>Agile Scrum</div>
                             <div className="range-value"></div>
                             <input id="range" type="range" min="0" max="100" value="30" step="1" />
                         </div>

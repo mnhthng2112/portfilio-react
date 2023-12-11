@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper";
@@ -7,8 +7,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
+const inkColor = [
+  './images/orange.png',
+  './images/blue.png',
+  './images/blueGreen.png'
+]
+
 const Banner = () => {
   const typedName = useRef<HTMLDivElement>(null);
+  const [randomNumber, setRandomNumber] = useState<number[][]>(
+    inkColor.map(() => [Math.floor(Math.random() * 100), Math.floor(Math.random() * 100)])
+  );
+  console.log(randomNumber);
+  
+  useEffect(() => {
+    // const handleScroll = () => {
+      const initialRandoms = inkColor.map(() => [Math.floor(Math.random() * 100), Math.floor(Math.random() * 100)]);      
+      setRandomNumber(initialRandoms);
+    // };
+
+    // window.addEventListener('wheel', handleScroll);
+
+    // return () => {
+    //   window.removeEventListener('wheel', handleScroll);
+    // };
+  }, []);
 
   useEffect(() => {
     if (typedName.current) {
@@ -70,6 +93,11 @@ const Banner = () => {
         <div className="vertical-dashed !right-[-20px]"></div>
         <div className="horizontal-dashed !top-[-20px]"></div>
         <div className="horizontal-dashed !bottom-[-20px]"></div>
+        {inkColor.map((item, index) => (
+          <div key={index} className={`absolute z-10 w-[200px]`} style={{top: `${randomNumber[index][0]}%`, right: `${randomNumber[index][1]}%`}}>
+          <img src={item} className="opacity-60" alt="" />
+        </div>
+        ))}
         <div className="bg-gradient-to-br from-greyLight to-greySemiBold p-5 w-3/4 my-auto mx-auto">
           <Swiper
             autoplay={{

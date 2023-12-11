@@ -9,7 +9,7 @@ const Header = () => {
             navName: "about"
         },
         {
-            navName: "portfolio"
+            navName: "project"
         },
         {
             navName: "favorites"
